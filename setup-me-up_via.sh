@@ -22,13 +22,6 @@ apt update && apt install curl wget -y
 echo "Installing python3..."
 apt install python3-pip && cp /bin/python3 /bin/python
 
-echo "Downloading udocker version $UDOCKER_VERSION..."
-wget $UDOCKER_URL
-
-echo "Extracting udocker..."
-tar zxvf $UDOCKER_TAR
-
-echo "Setting up udocker environment..."
-export PATH=`pwd`/udocker-${UDOCKER_VERSION}/udocker:$PATH
-
-echo "udocker installation and setup completed."
+echo "Installing udocker"
+su user
+wget https://github.com/indigo-dc/udocker/releases/download/1.3.16/udocker-1.3.16.tar.gz && tar zxvf udocker-1.3.16.tar.gz && export PATH=$(pwd)/udocker-1.3.16/udocker:$PATH
