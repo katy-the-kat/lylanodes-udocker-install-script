@@ -25,11 +25,7 @@ In environments where Docker cannot be directly installed or used, such as in PR
    sh ./setup-me-up_via.sh
    ```
 
-### What the Script Does
-
-- Checks if the user `user` exists, and if not, creates it with a home directory.
-- Installs `curl` and `wget` if they are not already installed.
-- Downloads the specified version of `udocker`, extracts it, and sets up the environment to use `udocker`.
+To use udocker. do `su user` and do `udocker`. it should work. and try `udocker run ubuntu:22.04`
 
 ### Supported Environments
 
