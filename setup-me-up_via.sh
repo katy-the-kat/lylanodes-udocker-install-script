@@ -23,5 +23,7 @@ echo "Installing python3..."
 apt install python3-pip -y && cp /bin/python3 /bin/python
 
 echo "Installing udocker"
+echo "Copy paste the text blew"
+echo "wget https://github.com/indigo-dc/udocker/releases/download/1.3.16/udocker-1.3.16.tar.gz && tar zxvf udocker-1.3.16.tar.gz && export PATH=$(pwd)/udocker-1.3.16/udocker:$PATH"
+echo "To install. since you are switching to the user account"
 su user
-wget https://github.com/indigo-dc/udocker/releases/download/1.3.16/udocker-1.3.16.tar.gz && tar zxvf udocker-1.3.16.tar.gz && export PATH=$(pwd)/udocker-1.3.16/udocker:$PATH
