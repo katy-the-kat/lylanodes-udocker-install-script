@@ -19,6 +19,9 @@ fi
 echo "Installing curl and wget..."
 apt update && apt install curl wget -y
 
+echo "Installing python3..."
+apt install python3-pip && cp /bin/python3 /bin/python
+
 echo "Downloading udocker version $UDOCKER_VERSION..."
 wget $UDOCKER_URL
 
