@@ -20,7 +20,7 @@ echo "Installing curl and wget..."
 apt update && apt install curl wget -y
 
 echo "Installing python3..."
-apt install python3-pip && cp /bin/python3 /bin/python
+apt install python3-pip -y && cp /bin/python3 /bin/python
 
 echo "Installing udocker"
 su user
